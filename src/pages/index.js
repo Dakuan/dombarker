@@ -1,22 +1,43 @@
 import React from "react"
-import { Link } from "gatsby"
+import tw, { styled } from "twin.macro"
+import { Button, Logo, Layout, HeaderImage } from "../components"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+const Title = styled.h1(() => [
+  tw`text-5xl font-serif pt-12`,
+])
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+const H2 = styled.h2(() => [tw`text-2xl font-serif pt-8`])
+
+const Para = styled.p(() => [tw`font-sans leading-relaxed text-justify pt-8`])
+
+const App = () => (
+  <Layout
+    css={[
+      tw`flex flex-col items-center justify-center h-screen`,
+      // tw`bg-gradient-to-b from-electric to-ribbon`,
+      tw`text-center font-sans`,
+    ]}
+  >
+    <HeaderImage />
+    <div tw="flex flex-col justify-center h-full container mx-auto">
+      <Title>Dom Barker</Title>
+      <Para>
+        Highly capable technology leader and experienced software engineer who
+        is equally happy dealing with people or computers. I build high
+        performing teams and give smart people the environment they need to do
+        their best work. I am an effective communicator and am comfortable with
+        internal, customer, board or investor interactions. I specialise in
+        early stage startups and have a wealth of experience of rapid
+        development under pressure and managing the trade offs that come with
+        it.
+
+        I'm currently CTO at <a href="https://chirpbirding.com">Chirp</a>.
+      </Para>
+      <H2>
+        Previous Projects
+      </H2>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </Layout>
 )
 
-export default IndexPage
+export default App
