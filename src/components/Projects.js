@@ -1,12 +1,11 @@
 import React, { useState } from "react"
-import tw, { styled } from "twin.macro"
+import tw from "twin.macro"
 
 const projectTypeStyle = {
   finance: tw`bg-emerald-400`,
   media: tw`bg-pink-400`,
   publishing: tw`bg-red-400`,
   mixed: tw`bg-gradient-to-r from-purple-400 via-pink-400 to-red-400`,
-
 }
 
 const projectsData = [
@@ -60,6 +59,21 @@ const projectsData = [
   },
 ]
 
+const TypeLable = ({ type }) => {
+  return (
+    <span
+      css={[
+        tw`ml-auto px-2 py-1 w-20`,
+        tw`text-white text-sm`,
+        tw`bg-indigo-400 border rounded-sm self-start`,
+        projectTypeStyle[type],
+      ]}
+    >
+      {type}
+    </span>
+  )
+}
+
 const Tech = ({ tech, setSelectedTech, selectedTech }) => {
   const isSelected = selectedTech === tech
   return (
@@ -87,14 +101,7 @@ const Project = ({
     <div tw="bg-gray-50 border-gray-200 border w-full max-w-2xl rounded-sm mb-8 shadow-md mx-auto">
       <div tw="p-3 text-lg border-b bg-gray-100 text-gray-700 flex">
         <span tw="font-semibold text-left">{`${role} at ${company}`}</span>
-        <span
-          css={[
-            tw`ml-auto bg-indigo-400 border rounded-sm text-white text-sm px-2 py-1 w-20 self-start`,
-            projectTypeStyle[type],
-          ]}
-        >
-          {type}
-        </span>
+        <TypeLable type={type} />
       </div>
       {/* <div css={[tw`bg-white border-b text-left p-3`]}>
         I joined Jigsaw to help them transition from being a project based

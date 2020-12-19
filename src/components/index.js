@@ -1,5 +1,4 @@
-export { default as Button } from './Button'
-export { default as Logo } from './Logo'
 export { default as Layout } from './Layout'
 export { default as HeaderImage } from './HeaderImage'
-export {default as Projects } from './Projects'
+export { default as Projects } from './Projects'
+export * as Typography from "./Typography"

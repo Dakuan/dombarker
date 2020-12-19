@@ -36,10 +36,8 @@ const BackgroundSection = ({ className }) => {
     <div tw="flex flex-col items-center w-full mb-10">
       <BackgroundImage
         tw="h-40"
-        Tag="section"
         className={className}
         fluid={imageData}
-        backgroundColor={`#040e18`}
       />
       <div>
         <Img
