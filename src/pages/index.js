@@ -36,6 +36,15 @@ const App = () => (
       <H2>
         Previous Projects
       </H2>
+      <Para>
+        <ul tw="list-disc">
+          <li>VP Engineering at Jellyfish</li>
+          <li>Consultant at Jigsaw.xyz</li>
+          <li>CTO at Metalhub</li>
+          <li>CTO at Fluidly</li>
+          <li>Engineer at Which?</li>
+        </ul>
+      </Para>
     </div>
   </Layout>
 )
