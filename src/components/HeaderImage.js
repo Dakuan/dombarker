@@ -19,7 +19,7 @@ const BackgroundSection = ({ className }) => {
         }
         header: file(relativePath: { eq: "header.jpg" }) {
           childImageSharp {
-            fluid(quality: 90, maxWidth: 1920) {
+            fluid(quality: 100, maxWidth: 1280) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -33,33 +33,33 @@ const BackgroundSection = ({ className }) => {
   const domPic = data.dom.childImageSharp.fluid
 
   return (
-    <>
+    <div tw="flex flex-col items-center w-full mb-10">
       <BackgroundImage
+        tw="h-40"
         Tag="section"
         className={className}
         fluid={imageData}
         backgroundColor={`#040e18`}
-      ></BackgroundImage>
+      />
       <div>
         <Img
           css={[
             tw`rounded-full justify-center ring-4 ring-offset-4 w-40`,
-            // `width: 150px;`,
             `margin-top: -50%;`,
           ]}
           fluid={domPic}
         />
       </div>
-    </>
+    </div>
   )
 }
 
 const Image = styled(BackgroundSection)`
   width: 100%;
-  height: 30vh;
   background-position: center center;
   background-repeat: repeat-y;
   background-size: cover;
 `
 
+// export default () => <div tw="bg-red-300 w-full h-16">hi</div>
 export default Image

@@ -5,13 +5,11 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Libre Baskerville`,
-          `Monserrat`,
-        ],
+        fonts: [`Bitter`, `Libre Baskerville`, `Monserrat`],
         display: "swap",
       },
     },

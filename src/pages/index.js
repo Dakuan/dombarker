@@ -1,25 +1,24 @@
 import React from "react"
 import tw, { styled } from "twin.macro"
-import { Button, Logo, Layout, HeaderImage } from "../components"
+import { Button, Logo, Layout, HeaderImage, Projects } from "../components"
 
-const Title = styled.h1(() => [
-  tw`text-5xl font-serif pt-12`,
-])
+const Title = styled.h1(() => [tw`font-serif`])
 
-const H2 = styled.h2(() => [tw`text-2xl font-serif pt-8`])
+const H2 = styled.h2(() => [tw`font-serif`])
 
-const Para = styled.p(() => [tw`font-sans leading-relaxed text-justify pt-8`])
+const Para = styled.p(() => [tw`font-sans leading-relaxed text-justify`])
+
+const Link = ({ href, children }) => <a href={href}>{children}</a>
 
 const App = () => (
   <Layout
     css={[
-      tw`flex flex-col items-center justify-center h-screen`,
-      // tw`bg-gradient-to-b from-electric to-ribbon`,
+      tw`flex flex-col items-center justify-center`,
       tw`text-center font-sans`,
     ]}
   >
     <HeaderImage />
-    <div tw="flex flex-col justify-center h-full container mx-auto">
+    <div tw="flex flex-col justify-center h-full container mx-auto prose">
       <Title>Dom Barker</Title>
       <Para>
         Highly capable technology leader and experienced software engineer who
@@ -30,21 +29,13 @@ const App = () => (
         early stage startups and have a wealth of experience of rapid
         development under pressure and managing the trade offs that come with
         it.
-
-        I'm currently CTO at <a href="https://chirpbirding.com">Chirp</a>.
       </Para>
-      <H2>
-        Previous Projects
-      </H2>
       <Para>
-        <ul tw="list-disc">
-          <li>VP Engineering at Jellyfish</li>
-          <li>Consultant at Jigsaw.xyz</li>
-          <li>CTO at Metalhub</li>
-          <li>CTO at Fluidly</li>
-          <li>Engineer at Which?</li>
-        </ul>
+      I'm currently CTO at{" "}
+        <Link href="https://chirpbirding.com">Chirp</Link> where im working on encouraging people to engage more with the natural world.
       </Para>
+      <H2>Previous Projects</H2>
+      <Projects />
     </div>
   </Layout>
 )
