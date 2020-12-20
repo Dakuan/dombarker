@@ -1,13 +1,25 @@
 import React from "react"
+import tw from "twin.macro"
 
+import { Typography, Dog } from "../components"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
 const NotFoundPage = () => (
-  <Layout>
+  <Layout
+    css={[
+      tw`flex flex-col items-center justify-center pt-32`,
+      tw`text-center font-sans`,
+      tw`flex flex-col justify-center h-full container mx-auto`,
+      tw`prose`,
+    ]}
+  >
     <SEO title="404: Not found" />
-    <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <Typography.Title css={[tw`mt-8`]}>404: Not Found</Typography.Title>
+    <Dog css={[tw`mb-8`]} />
+    <Typography.P css={[tw`mt-8`]}>
+      You just hit a route that doesn&#39;t exist... the sadness.
+    </Typography.P>
   </Layout>
 )
 
