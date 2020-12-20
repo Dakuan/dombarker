@@ -6,7 +6,7 @@ import {
   Projects,
   Typography,
   Links,
-  NavBar,
+  Navbar,
 } from "../components"
 
 const { Title, P, H2, Link } = Typography
@@ -21,7 +21,7 @@ const App = () => (
     <HeaderImage />
     <div css={[tw`flex flex-col justify-center h-full container mx-auto`]}>
       <Title>Dom Barker</Title>
-      <NavBar />
+      <Navbar />
       <P>
         Highly capable technology leader and experienced software engineer who
         is equally happy dealing with people or computers. I build high
@@ -47,7 +47,7 @@ const App = () => (
       <Links />
       <H2 id="projects">Previous Projects</H2>
       <Projects />
-      <NavBar />
+      <Navbar />
     </div>
   </Layout>
 )
