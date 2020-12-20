@@ -1,9 +1,7 @@
-import tw, { styled } from "twin.macro"
-
+import tw from "twin.macro"
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-
 import BackgroundImage from "gatsby-background-image"
 
 const BackgroundSection = ({ className }) => {
@@ -28,14 +26,13 @@ const BackgroundSection = ({ className }) => {
     `
   )
 
-  // Set ImageData.
   const imageData = data.header.childImageSharp.fluid
   const domPic = data.dom.childImageSharp.fluid
 
   return (
-    <div tw="flex flex-col items-center w-full mb-10">
+    <div tw="flex flex-col items-center w-full mb-10 bg-center">
       <BackgroundImage
-        tw="md:h-44 h-40"
+        tw="md:h-44 h-40 w-full"
         className={className}
         fluid={imageData}
       />
@@ -52,12 +49,4 @@ const BackgroundSection = ({ className }) => {
   )
 }
 
-const Image = styled(BackgroundSection)`
-  width: 100%;
-  background-position: center center;
-  background-repeat: repeat-y;
-  background-size: cover;
-`
-
-// export default () => <div tw="bg-red-300 w-full h-16">hi</div>
-export default Image
+export default BackgroundSection
