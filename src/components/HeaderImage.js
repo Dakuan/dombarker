@@ -8,14 +8,14 @@ const BackgroundSection = ({ className }) => {
   const data = useStaticQuery(
     graphql`
       query {
-        dom: file(relativePath: { eq: "dom.png" }) {
+        dom: file(relativePath: { eq: "dom3.jpeg" }) {
           childImageSharp {
-            fluid(quality: 90, maxWidth: 100) {
+            fluid(quality: 100, maxWidth: 300, maxHeight: 300) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
-        header: file(relativePath: { eq: "header.jpg" }) {
+        header: file(relativePath: { eq: "pano2.jpeg" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 1280) {
               ...GatsbyImageSharpFluid_withWebp
@@ -32,7 +32,7 @@ const BackgroundSection = ({ className }) => {
   return (
     <div tw="flex flex-col items-center w-full mb-10 bg-center">
       <BackgroundImage
-        tw="md:h-44 h-40 w-full"
+        tw="md:h-48 lg:h-60 h-40 w-full"
         className={className}
         fluid={imageData}
       />

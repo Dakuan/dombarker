@@ -5,7 +5,7 @@ const P = ({ children, ...rest }) => {
   const { css = [] } = rest
   return (
     <p
-      css={[tw`font-sans leading-relaxed text-justify my-5`, ...css]}
+      css={[tw`font-sans leading-relaxed text-justify my-4`, ...css]}
       {...rest}
     >
       {children}
