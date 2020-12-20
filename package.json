@@ -30,7 +30,9 @@
     "twin.macro": "^2.0.7"
   },
   "devDependencies": {
-    "prettier": "2.2.1"
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1"
   },
   "keywords": [
     "gatsby"
@@ -56,5 +58,13 @@
     "twin": {
       "preset": "styled-components"
     }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md}": "prettier --write"
   }
 }

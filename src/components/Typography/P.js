@@ -1,4 +1,3 @@
-
 import React from "react"
 import tw from "twin.macro"
 
@@ -8,4 +7,4 @@ const P = ({ children, rest }) => (
   </p>
 )
 
-export default P;
+export default P

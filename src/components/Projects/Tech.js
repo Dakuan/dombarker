@@ -1,5 +1,5 @@
-import React from 'react'
-import tw from 'twin.macro'
+import React from "react"
+import tw from "twin.macro"
 
 const Tech = ({ tech, setSelectedTech, selectedTech }) => {
   const isSelected = selectedTech === tech
@@ -19,4 +19,4 @@ const Tech = ({ tech, setSelectedTech, selectedTech }) => {
   )
 }
 
-export default Tech;
+export default Tech

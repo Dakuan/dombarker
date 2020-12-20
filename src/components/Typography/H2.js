@@ -7,4 +7,4 @@ const H2 = ({ children, rest }) => (
   </h2>
 )
 
-export default H2;
+export default H2
