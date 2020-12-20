@@ -17,8 +17,8 @@ const NotFoundPage = () => (
     <SEO title="404: Not found" />
     <Typography.Title css={[tw`mt-8`]}>404: Not Found</Typography.Title>
     <Dog css={[tw`mb-8`]} />
-    <Typography.P css={[tw`mt-8`]}>
-      You just hit a route that doesn&#39;t exist... the sadness.
+    <Typography.P css={[tw`mt-8 text-center`]}>
+      There is nothing here, just emptiness and the dark.
     </Typography.P>
   </Layout>
 )

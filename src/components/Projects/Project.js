@@ -9,6 +9,7 @@ const Project = ({
   company,
   tech,
   type,
+  text,
   setSelectedTech,
   selectedTech,
 }) => {
@@ -18,15 +19,8 @@ const Project = ({
         <span tw="font-semibold text-left">{`${role} at ${company}`}</span>
         <TypeLabel type={type} />
       </div>
-      {/* <div css={[tw`bg-white border-b text-left p-3`]}>
-        I joined Jigsaw to help them transition from being a project based
-        consultancy to an internal product based company. I advised on the
-        architectural design of an Open Banking driven platform that enables
-        individuals and small businesses to leverage their own data, rather than
-        be exploited by it. I helped the team move from a ‘Big Design Upfront’
-        process to a ‘Hypothesis Based’ one, with a rapid Build-Measure-Learn
-        loop.
-      </div> */}
+      {/* {text && <div css={[tw`bg-white border-b text-left p-3`]}>{text}</div>} */}
+
       <div css={[tw`flex flex-row space-x-2 flex-wrap p-3 pt-0`]}>
         {tech.sort().map(t => (
           <Tech

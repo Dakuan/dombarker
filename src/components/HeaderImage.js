@@ -34,7 +34,11 @@ const BackgroundSection = ({ className }) => {
 
   return (
     <div tw="flex flex-col items-center w-full mb-10">
-      <BackgroundImage tw="h-40" className={className} fluid={imageData} />
+      <BackgroundImage
+        tw="md:h-44 h-40"
+        className={className}
+        fluid={imageData}
+      />
       <div>
         <Img
           css={[

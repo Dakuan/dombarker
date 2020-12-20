@@ -14,6 +14,7 @@ const ProjectsContainer = () => {
               id
               role
               type
+              text
               tech
             }
           }

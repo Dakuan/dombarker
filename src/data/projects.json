@@ -3,6 +3,7 @@
     "role": "CTO",
     "company": "Fluidly",
     "type": "finance",
+    "text": "Fluidly is a ML / AI fintech that is helping small businesses manage, forecast and optimise their cashflow. I was the first hire and created the MVP with which we raised a pre-seed of £300k. I hired a team of 4 (1 data scientist + 3 engineers) and we extended the MVP, gained some customers and raised a seed round of £2m led by Octopus Ventures. I scaled the technology team to 12 (3 data scientists, 2 product people, 7 engineers) and took the business to a £5m series A. It is a complex service oriented SAAS application, ingesting and processing large volumes of data from multiple data sources. I had a seat on the board and frequently represented the company externally at conferences and webinars.",
     "tech": [
       "kubernetes",
       "reactjs",
@@ -18,6 +19,7 @@
     "role": "CTO",
     "company": "Metalhub",
     "type": "retail",
+    "text": "Tata Steel Digital ventures is a joint venture between the Boston Consulting Group and Tata Steel Europe. They set out to digitise the UK steel market which is still very old fashioned. I managed a team of 8 people across two products; MetalHub - a retail ecommerce marketplace that connected small steel buyers and suppliers and SteelScout - a B2B concierge service for ‘serious’ steel buyers. My team was 6 engineers and two designers. The team had been leaderless for a while so my main task was to re-motivate them and add some structure. I was a part of the senior management team, reporting to the Managing Director and the Venture Board.",
     "tech": ["heroku", "ruby", "postgres", "reactjs", "circleCI", "redis"]
   },
   {
@@ -42,18 +44,21 @@
     "role": "Tech Lead",
     "company": "OpenXO",
     "type": "media",
+    "text": "I was the first hire at OpenXO where we set out to enable brands and locations to monetise their wifi networks. I hired a team of 4 and we scaled the product to 1M users. The solution consisted of a Golang microservices platform, a React front end, and a Ruby admin application.",
     "tech": ["ruby", "reactjs", "backbonejs", "nodejs", "docker"]
   },
   {
     "role": "Engineer",
     "company": "Unomee",
     "type": "mixed",
+    "text": "Unomee are an agency that took on lots of random small projects and one very big legal document management project. I handled the full software development life cycle for smaller projects, as well as providing front end javascript expertise for the big one.",
     "tech": ["ruby", ".net", "backbonejs", "heroku", "AWS"]
   },
   {
     "role": "Engineer",
     "company": "Earthware",
     "type": "mixed",
+    "text": "Earthware specialised in interactive mapping, but took on other healthcare related projects (MD was ex pharma). I did a little bit of everything as I learned to code at a professional level.",
     "tech": ["backbonejs", "azure", "xamarin", "cordova", "iOS"]
   }
 ]

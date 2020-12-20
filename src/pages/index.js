@@ -1,8 +1,15 @@
 import React from "react"
 import tw from "twin.macro"
-import { Layout, HeaderImage, Projects, Typography, Links } from "../components"
+import {
+  Layout,
+  HeaderImage,
+  Projects,
+  Typography,
+  Links,
+  NavBar,
+} from "../components"
 
-const { Title, P, H2 } = Typography
+const { Title, P, H2, Link } = Typography
 
 const App = () => (
   <Layout
@@ -12,13 +19,9 @@ const App = () => (
     ]}
   >
     <HeaderImage />
-    <div
-      css={[
-        tw`flex flex-col justify-center h-full container mx-auto`,
-        tw`prose`,
-      ]}
-    >
+    <div css={[tw`flex flex-col justify-center h-full container mx-auto`]}>
       <Title>Dom Barker</Title>
+      <NavBar />
       <P>
         Highly capable technology leader and experienced software engineer who
         is equally happy dealing with people or computers. I build high
@@ -30,20 +33,21 @@ const App = () => (
         it.
       </P>
       <P>
-        I'm currently CTO at <a href="https://chirpbirding.com">Chirp</a> where
-        I'm working on encouraging people to engage more with the natural world.
-        I'm hoping that if people appreciate the critters that dwindle while
-        they surround us then perhaps they might make different choices about
-        how they treat our environment.
+        I'm currently CTO at <Link href="https://chirpbirding.com">Chirp</Link>{" "}
+        where I'm working on encouraging people to engage more with the natural
+        world. I'm hoping that if people appreciate the critters that continue
+        to dwindle around us then perhaps they might make different choices
+        about how they treat our environment.
       </P>
       <P>
         If you'd like to get in touch feel free to{" "}
-        <a href="mailto:dom@dombarker.co.uk">email me</a>.
+        <Link href="mailto:dom@dombarker.co.uk">email me</Link>.
       </P>
-      <H2>Articles & Interviews</H2>
+      <H2 id="articles">Articles & Interviews</H2>
       <Links />
-      <H2>Previous Projects</H2>
+      <H2 id="projects">Previous Projects</H2>
       <Projects />
+      <NavBar />
     </div>
   </Layout>
 )
