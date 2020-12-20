@@ -1,6 +1,6 @@
 import React from "react"
 import tw from "twin.macro"
-import { Layout, HeaderImage, Projects, Typography } from "../components"
+import { Layout, HeaderImage, Projects, Typography, Links } from "../components"
 
 const { Title, P, H2 } = Typography
 
@@ -40,6 +40,8 @@ const App = () => (
         If you'd like to get in touch feel free to{" "}
         <a href="mailto:dom@dombarker.co.uk">email me</a>.
       </P>
+      <H2>Articles & Interviews</H2>
+      <Links />
       <H2>Previous Projects</H2>
       <Projects />
     </div>

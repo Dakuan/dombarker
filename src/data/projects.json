@@ -54,6 +54,6 @@
     "role": "Engineer",
     "company": "Earthware",
     "type": "mixed",
-    "tech": [".net", "backbonejs", "azure", "xamarin", "cordova", "iOS"]
+    "tech": ["backbonejs", "azure", "xamarin", "cordova", "iOS"]
   }
 ]

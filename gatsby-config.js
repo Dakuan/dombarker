@@ -16,7 +16,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Bitter`, `Libre Baskerville`, `Monserrat`],
+        fonts: [
+          `Bitter\:300,400,400i,700`,
+          `Libre Baskerville`,
+          `Monserrat\:300,400,400i,700`,
+        ],
         display: "swap",
       },
     },
