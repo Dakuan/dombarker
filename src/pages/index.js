@@ -32,7 +32,7 @@ const App = () => (
       <P>
         I'm currently CTO at <a href="https://chirpbirding.com">Chirp</a>{" "}
         where I'm working on encouraging people to engage more with the natural
-        world. I'm hoping that if people appricate the critters that dwindle
+        world. I'm hoping that if people appreciate the critters that dwindle
         while they surround us then perhaps they might make different choices
         about how they treat our environment.
       </P>

@@ -1,7 +1,5 @@
 const colors = require("tailwindcss/colors")
 
-console.log(colors);
-
 module.exports = {
   theme: {
     container: {

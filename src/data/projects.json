@@ -1,0 +1,50 @@
+[
+  {
+    "role": "CTO",
+    "company": "Fluidly",
+    "type": "finance",
+    "tech": ["kubernetes", "reactjs", "nodejs", "redis", "postgres", "GCP"]
+  },
+  {
+    "role": "CTO",
+    "company": "Metalhub",
+    "type": "retail",
+    "tech": ["heroku", "ruby", "postgres", "reactjs"]
+  },
+  {
+    "role": "VP Engineering",
+    "company": "Quill Content / Jellyfish",
+    "type": "media",
+    "tech": ["kubernetes", "reactjs", "nodejs", "mysql", "GCP"]
+  },
+  {
+    "role": "Consultant",
+    "company": "Jigsaw.xyz",
+    "type": "finance",
+    "tech": ["kubernetes", "react native", "nodejs", "postgres", "GCP"]
+  },
+  {
+    "role": "Tech Lead",
+    "company": "Which?",
+    "type": "publishing",
+    "tech": ["ruby", "reactjs"]
+  },
+  {
+    "role": "Tech Lead",
+    "company": "OpenXO",
+    "type": "media",
+    "tech": ["ruby", "reactjs", "backbonejs", "nodejs"]
+  },
+  {
+    "role": "Engineer",
+    "company": "Unomee",
+    "type": "mixed",
+    "tech": ["ruby", ".net", "backbonejs", "heroku"]
+  },
+  {
+    "role": "Engineer",
+    "company": "Earthware",
+    "type": "mixed",
+    "tech": [".net", "backbonejs", "azure"]
+  }
+]

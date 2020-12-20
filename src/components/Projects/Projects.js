@@ -1,0 +1,19 @@
+import React from "react"
+import tw from "twin.macro"
+
+import Project from "./Project"
+
+const Projects = ({ projects, selectedTech, setSelectedTech }) => (
+  <div css={[tw`w-full flex flex-wrap`]}>
+    {projects.map(p => (
+      <Project
+        key={p.id}
+        {...p}
+        selectedTech={selectedTech}
+        setSelectedTech={setSelectedTech}
+      />
+    ))}
+  </div>
+)
+
+export default Projects
