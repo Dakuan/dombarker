@@ -5,6 +5,14 @@ module.exports = {
     author: `dom@dombarker.co.uk`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content`,
+        name: `content`,
+      },
+    },
+    `gatsby-plugin-mdx`,
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
