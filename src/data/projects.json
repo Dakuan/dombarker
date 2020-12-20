@@ -3,13 +3,22 @@
     "role": "CTO",
     "company": "Fluidly",
     "type": "finance",
-    "tech": ["kubernetes", "reactjs", "nodejs", "redis", "postgres", "GCP"]
+    "tech": [
+      "kubernetes",
+      "reactjs",
+      "nodejs",
+      "redis",
+      "postgres",
+      "GCP",
+      "mongodb",
+      "python"
+    ]
   },
   {
     "role": "CTO",
     "company": "Metalhub",
     "type": "retail",
-    "tech": ["heroku", "ruby", "postgres", "reactjs"]
+    "tech": ["heroku", "ruby", "postgres", "reactjs", "circleCI", "redis"]
   },
   {
     "role": "VP Engineering",
@@ -21,30 +30,30 @@
     "role": "Consultant",
     "company": "Jigsaw.xyz",
     "type": "finance",
-    "tech": ["kubernetes", "react native", "nodejs", "postgres", "GCP"]
+    "tech": ["kubernetes", "react native", "nodejs", "postgres", "AWS", "istio"]
   },
   {
     "role": "Tech Lead",
     "company": "Which?",
     "type": "publishing",
-    "tech": ["ruby", "reactjs"]
+    "tech": ["ruby", "reactjs", "docker", "AWS"]
   },
   {
     "role": "Tech Lead",
     "company": "OpenXO",
     "type": "media",
-    "tech": ["ruby", "reactjs", "backbonejs", "nodejs"]
+    "tech": ["ruby", "reactjs", "backbonejs", "nodejs", "docker"]
   },
   {
     "role": "Engineer",
     "company": "Unomee",
     "type": "mixed",
-    "tech": ["ruby", ".net", "backbonejs", "heroku"]
+    "tech": ["ruby", ".net", "backbonejs", "heroku", "AWS"]
   },
   {
     "role": "Engineer",
     "company": "Earthware",
     "type": "mixed",
-    "tech": [".net", "backbonejs", "azure"]
+    "tech": [".net", "backbonejs", "azure", "xamarin", "cordova", "iOS"]
   }
 ]
