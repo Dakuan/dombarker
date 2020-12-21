@@ -24,8 +24,10 @@ const App = () => (
       <Title>Dom Barker</Title>
       <Navbar />
       <Statement />
+      <hr css={[tw`border-gray-900 mt-4`]} />
       <H2 id="articles">Articles & Interviews</H2>
       <Links />
+      <hr css={[tw`border-gray-900 mt-8`]} />
       <H2 id="projects">Previous Projects</H2>
       <Projects />
       <Navbar />

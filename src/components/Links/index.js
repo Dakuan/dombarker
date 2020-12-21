@@ -12,6 +12,7 @@ const LinksContainer = () => {
             node {
               id
               title
+              icon
               url
             }
           }
