@@ -1,4 +1,19 @@
 [
+    {
+    "role": "CTO",
+    "company": "Birda",
+    "type": "conservation",
+    "text": "'Strava for Birdwatching', or social birding.",
+    "tech": [
+      "react native",
+      "reactjs",
+      "nodejs",
+      "redis",
+      "postgres",
+      "GCP",
+      "BigQuery"
+    ]
+  },
   {
     "role": "CTO",
     "company": "Fluidly",
