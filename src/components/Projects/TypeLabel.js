@@ -12,7 +12,7 @@ const TypeLabel = ({ type }) => {
   return (
     <span
       css={[
-        tw`ml-auto px-2 py-1 w-20`,
+        tw`ml-auto px-2 py-1 w-24`,
         tw`text-white text-sm`,
         tw`bg-indigo-400 border rounded-sm self-start`,
         projectTypeStyle[type],
