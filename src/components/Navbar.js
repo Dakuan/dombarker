@@ -11,6 +11,7 @@ const NavBar = () => (
   >
     <PillButton href="#articles">Articles</PillButton>
     <PillButton href="#projects">Projects</PillButton>
+    <PillButton href="https://photos.dombarker.co.uk">Photos</PillButton>
   </div>
 )
 
