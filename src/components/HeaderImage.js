@@ -39,7 +39,7 @@ const BackgroundSection = ({ className }) => {
       <div>
         <Img
           css={[
-            tw`rounded-full justify-center ring-4 ring-offset-4 w-40`,
+            tw`rounded-full justify-center ring-4 ring-offset-4 w-40 ring-white`,
             `margin-top: -50%;`,
           ]}
           fluid={domPic}
