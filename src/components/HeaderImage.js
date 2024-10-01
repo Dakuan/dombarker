@@ -15,7 +15,7 @@ const BackgroundSection = ({ className }) => {
             }
           }
         }
-        header: file(relativePath: { eq: "pano2.jpeg" }) {
+        header: file(relativePath: { eq: "pano4.jpg" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 1280) {
               ...GatsbyImageSharpFluid_withWebp
