@@ -15,7 +15,7 @@ const BackgroundSection = ({ className }) => {
             }
           }
         }
-        header: file(relativePath: { eq: "pano4.jpg" }) {
+        header: file(relativePath: { eq: "pano5.jpg" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 1280) {
               ...GatsbyImageSharpFluid_withWebp
@@ -32,7 +32,7 @@ const BackgroundSection = ({ className }) => {
   return (
     <div tw="flex flex-col items-center w-full mb-10 bg-center">
       <BackgroundImage
-        tw="md:h-48 lg:h-60 h-40 w-full"
+        tw="md:h-48 lg:h-72 h-40 w-full"
         className={className}
         fluid={imageData}
       />
